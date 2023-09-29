@@ -554,17 +554,4 @@ else{alert("Invalid Reg Number");}
    
    
    /*______________________________________________/*______________________________________________/*______________________________________________/*______________________________________________/*______________________________________________*/
-   
-   
-   
-   
-
-
-function dis(t) {
-    if (t === '1') {
-        var xw = `<button onclick="pri()" style="background-color: rgba(250, 162, 0, 0.966); border: hidden; SIZE:30; border-radius: 15px;">PRINT</button>`;
-        var xc = `<center><img src="mi.png" height="30%" width="40%"></center>`;
-        document.getElementById('prix').innerHTML = xw;
-        document.getElementById('dev').innerHTML = xc;
-    }
-}
+  
