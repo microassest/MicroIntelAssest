@@ -558,53 +558,7 @@ else{alert("Invalid Reg Number");}
    
    
    
-function cht(h) {
-    document.getElementById('dr').innerHTML = '';
-    let sec = document.getElementById('se').value;
-    let secc = document.getElementById('i').value;
-    
-     if (secc >= "130CS22301" && secc <= "130CS22306" && sec === "3") {
-        document.getElementById('dr').innerHTML='';
-        var xwk = `<button onclick="pri()" style="background-color: rgba(250, 162, 0, 0.966); border: hidden; SIZE:30; border-radius: 15px;">PRINT</button>`;
-        var xck = `<center><img src="mi.png" height="30%" width="40%"></center>`;
-        document.getElementById('jhg').innerHTML = xwk;
-        document.getElementById('ghj').innerHTML = xck;
-    } else {
-        let six = sem1da[h][15];
-        let sev = sem1da[h][13];
-        let csv = six - sev;
-        let cs = csv / 400 * 100;
-        let csd = sem2da[h][15] / 500 * 100;
-        let csx = sem3da[h][13] / 400 * 100;
-        document.getElementById('dr').innerHTML='';
-        let cnvs = document.getElementById('dr');
-        var stat = new Chart(cnvs, {
-            type: "bar",
-            data: {
-                labels: ["Sem1", "Sem2", "Sem3"],
-                datasets: [{
-                    label: "Double tap here to Recalculate",
-                    barPercentage: 0.5,
-                    backgroundColor: ["orange", "red", "green"],
-                    data: [cs, csd, csx],
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        grid: {
-                            display: true,
-                            color: 'orange'
-                        }
-                    }
-                }
-            }
-        });
-        document.getElementById('jhg').innerHTML = '';
-        document.getElementById('ghj').innerHTML = '';
-        dis('1');
-    }
-}
+
 
 function dis(t) {
     if (t === '1') {
