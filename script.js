@@ -211,6 +211,7 @@ var z1 = `<div style="color: rgba(250, 162, 0, 0.966); font-family:'Times New Ro
     </table><br>
 </div>
 <div style="color:rgba(250, 162, 0, 0.966);">
+    <b><p><u>IA Not Included</u></p></b>
     <I><label for="d15"><strong>IA TOTAL:</strong></label><n> </n><n id="d15"></n><br>
     <label for="d9"><strong>EXAM TOTAL:</strong></label><n> </n><n id="d9"></n><br>
     <label for="d16"><strong>GRAND TOTAL:</strong></label><n> </n><n id="d16"></n><br>
@@ -270,13 +271,13 @@ window.alert("INVALID REGNO")
         document.getElementById('d6').innerHTML = data[h][5];
         document.getElementById('d7').innerHTML = data[h][6];
         document.getElementById('d8').innerHTML = data[h][7];
-        document.getElementById('d9').innerHTML = data[h][8]+"/160";
+        document.getElementById('d9').innerHTML = data[h][8]+"/210";
         document.getElementById('d10').innerHTML = data[h][9];
         document.getElementById('d11').innerHTML = data[h][10];
         document.getElementById('d12').innerHTML = data[h][11];
         document.getElementById('d13').innerHTML = data[h][12];
         document.getElementById('d14').innerHTML = data[h][13];
-        document.getElementById('d15').innerHTML = data[h][14]+"/240";
+        document.getElementById('d15').innerHTML = data[h][14]+"/290";
         document.getElementById('d16').innerHTML = data[h][15]+"/500";
         document.getElementById('d17').innerHTML = data[h][16];
         if (data[h][16]=="FAIL" || data[h][16]=="Fail" || data[h][16]=="withheld" || data[h][16]=="WITHHELD"){
