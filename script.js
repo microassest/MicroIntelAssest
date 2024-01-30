@@ -676,7 +676,7 @@ else{alert("Invalid Reg Number");}
   }
   document.getElementById('d1').innerHTML = data[h][0];
   document.getElementById('d2').innerHTML = data[h][1];
-  document.getElementById('d3').innerHTML = data[h][2];
+  document.getElementById('d3').innerHTML = 5;
   document.getElementById('d4').innerHTML = data[h][3];
   document.getElementById('d5').innerHTML = data[h][4];
   document.getElementById('d6').innerHTML = data[h][5];
