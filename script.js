@@ -686,7 +686,7 @@ else{alert("Invalid Reg Number");}
   document.getElementById('d6').innerHTML = data[h][5];
   document.getElementById('d13').innerHTML = data[h][5]+"/240";
   document.getElementById('d14').innerHTML = data[h][6]+"/160";
-  document.getElementById('d8').innerHTML = data[h][7]+"/400";
+  document.getElementById('d8').innerHTML = data[h][7]+"/400"+" ("+data[h][7]/400*100+" %)";
   document.getElementById('d15').innerHTML = data[h][8];
   
   
