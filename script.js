@@ -624,6 +624,10 @@ else{alert("Invalid Reg Number");}
   
   function sem5(){
   let g=document.getElementById('i').value;
+    if((g=="130CS20034" || g=="130CS20048")){
+  alert("processing");
+    }
+    
   if ((g>="130CS21003" && g<="130CS21063") || (g >="130CS22301" && g <="130CS22306")|| (g=="130CS21X01")){
   let t = document.getElementById('i').value;
   let k=t.substr(-3);
