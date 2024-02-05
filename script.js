@@ -220,7 +220,7 @@ let sem5da={
     s056:["130CS21056","SYEDA MALEEHA", 3 , 47,90,227,137,364,"PASS"],
     s057:["130CS21057","T R KEERTHANA",3 ,47,82,205,129,334,"PASS"],
     s058:["130CS21058","THARUN S",3 ,27,40,164,67,231 ,"PASS"],
-    s059:["130CS21059","UDAY T", 3 ,17,89,201,106,307,"FAIL"],
+    s059:["130CS21059","UDAY T", 3 ,17,89,201,106,307,"FAIL (Don't Worry my friend, A Single sheet of paper doesn't decide u r life , and my precious hope will always with u)"],
     s060:["130CS21060","VARSHINI Y M", 3, 55,87,219,142,361,"PASS"],
     s061:["130CS21061","VARUN M",3 ,31,42,164,73,237,"Pass"],
     s062:["130CS21062","VIGNESH D", 3 ,50,95,221,145,366 ,"PASS"],
