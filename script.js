@@ -1,5 +1,5 @@
-alert("🙏🙏🙏🙏🙏\n Kindly refresh this page if you are experiencing any issues, errors ....");
 let tx;
+let xXxX;
 let a =new Audio();
 let sem1da={
               s003:["130CS21003","AISHWARYA M",1,20,20,27,28,"-",95,40,25,37,46,42,190,285,"FIRST CLASS"],
