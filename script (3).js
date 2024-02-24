@@ -1,3 +1,142 @@
+
+
+
+<!DOCTYPE html>
+
+<!--                                         
+Ｄｅａｒ ｈａｃｋｉｎｇ ｍｉｎｄ，
+ｐｌｅａｓｅ ｂｅ ａｗａｒｅ ｔｈａｔ
+ａｃｃｅｓｓｉｎｇ ｔｈｅ ❤️ ｏｆ ｔｈｉｓ ｓｉｔｅ＇ｓ ｃｏｄｅ
+ｉｓ ｎｏｔ ｐｏｓｓｉｂｌe
+ｂｅｃａｕｓｅ ｉｔ ｈａｓ ｂｅｅｎ ｄｅｖｅｌｏｐｅｄ ｂｙ Ｍｉｃｒｏｉｎｔｅｌ™.
+
+-->
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>Result</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="result.css">
+</head>
+<body>
+<img src="https://4.bp.blogspot.com/-sJv3pQOUHks/TiWruyLxAnI/AAAAAAAAAGs/wQ5hw_mPY7w/s1600/karnataka_govt_logo.png"  height="100PX" width="100PX">
+<h1><strong>BOARD OF TECHNICAL EDUCATION</strong></h1>
+<h2><strong>DEPARTMENT OF TECHNICAL EDUCATION, KARNATAKA</strong></h2>
+<p style="background-color: rgb(243, 229, 167); color: aliceblue;">_</p>
+<div>
+    <label for="a"><strong>Regno:</strong></label>
+    <input id="i" type="text" placeholder="ENTER REG NUM IN CAPS" style="border: hidden;">
+    <label for="b"><strong>Semester:</strong></label>
+    <select id="se" style="border-radius:12px;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+
+    <option value="6">6</option>
+
+    </select>
+    <P>  </P>
+    <button onclick="sem()" style="background-color: rgba(250, 162, 0, 0.966); border: hidden; border-radius: 15px;">Get Result</button>
+</div>
+<p id="Table"></p>
+<p id="get"></p>
+<p id="jhg"></p>
+<p id="ghj"></p>
+<p id="prix"></p>
+<p id="dev"></p>
+<p id="compare"></p>
+
+<div id="ddv"></div>
+
+
+
+<script>
+
+
+function ggg(){
+
+let g=document.getElementById('i').value;
+
+
+    let t = document.getElementById('i').value;
+    let k = t.substr(-3);
+    let h = 's' + k;
+    
+    
+    let compa=`
+    <table class="table table-striped table-responsive table-hover">
+    <tr>
+    <th>Sem</th>
+    <th>IA</th>
+    <th>EXAM</th>
+    <th>Total</th>
+    </tr>
+    <tr>
+    <td id="cdsem1"></td>
+    <td id="cdia1"></td>
+    <td id="cdexam1"></td>
+    <td id="cdtotal1"></td>
+    </tr>
+    <tr>
+    <td id="cdsem2"></td>
+    <td id="cdia2"></td>
+    <td id="cdexam2"></td>
+    <td id="cdtotal2"></td>
+    </tr>
+    <tr>
+    <td id="cdsem3"></td>
+    <td id="cdia3"></td>
+    <td id="cdexam3"></td>
+    <td id="cdtotal3"></td>
+    </tr>
+    <tr>
+    <td id="cdsem4"></td>
+    <td id="cdia4"></td>
+    <td id="cdexam4"></td>
+    <td id="cdtotal4"></td>
+    </tr>
+    <tr>
+    <td id="cdsem5"></td>
+    <td id="cdia5"></td>
+    <td id="cdexam5"></td>
+    <td id="cdtotal5"></td>
+    </tr>  
+    </table>
+    `;
+    document.getElementById("ddv").innerHTML=compa;
+    
+    
+    document.getElementById("cdsem1").innerHTML=sem1da[h][2];
+    document.getElementById("cdia1").innerHTML=sem1da[h][14];
+    document.getElementById("cdexam1").innerHTML=sem1da[h][8];
+    document.getElementById("cdtotal1").innerHTML=sem1da[h][15];
+    
+    document.getElementById("cdsem2").innerHTML=sem2da[h][2];
+    document.getElementById("cdia2").innerHTML=sem2da[h][14];
+    document.getElementById("cdexam2").innerHTML=sem2da[h][8];
+    document.getElementById("cdtotal2").innerHTML=sem2da[h][15];
+    
+    document.getElementById("cdsem3").innerHTML=sem3da[h][2];
+    document.getElementById("cdia3").innerHTML=sem3da[h][12];
+    document.getElementById("cdexam3").innerHTML=sem3da[h][7];
+    document.getElementById("cdtotal3").innerHTML=sem3da[h][13];
+    
+    document.getElementById("cdsem4").innerHTML=sem4da[h][2];
+    document.getElementById("cdia4").innerHTML=sem4da[h][14];
+    document.getElementById("cdexam4").innerHTML=sem4da[h][8];
+    document.getElementById("cdtotal4").innerHTML=sem4da[h][15];
+    
+    document.getElementById("cdsem5").innerHTML=5;
+    document.getElementById("cdia5").innerHTML=sem5da[h][5];
+    document.getElementById("cdexam5").innerHTML=sem5da[h][6];
+    document.getElementById("cdtotal5").innerHTML=sem5da[h][7];
+    
+
+}
+
+  
 let tx;
 let xXxX;
 let a =new Audio();
@@ -289,18 +428,23 @@ function sem() {
     let s = document.getElementById('se').value;
     switch (s){
             case "1":
+            ggg();
                sem1();
                break;
             case "2":
+              ggg();
                sem2();
                break;
             case "3":
+               ggg();
                sem3();
                break;
             case "4":
+               ggg();
                sem4();
                break;
             case "5":
+                ggg();
                sem5();
                break;
             case "6":
@@ -914,6 +1058,9 @@ else{alert("Invalid Reg Number");}
     alert("Invalid Reg Number");}
     }
     }
+</script>
+  </body>
+  </html>
     
 
 
