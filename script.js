@@ -67,7 +67,7 @@ let sem6da={
 
 
 function sem6(){
-  alert("feeding....");
+  alert("feeding & working....");
   let g=document.getElementById('i').value;
     if((g=="130CS20034" || g=="130CS20048")){
   alert("processing");
@@ -98,7 +98,7 @@ function sem6(){
   <th>Sl.No</th><th>Subject Name</th><th> Marks</th><th>Subject Code</th>
   </tr>
   <tr>
-  <td>2</td><td>INTERSHIP</td><td id="d5"></td></td><td>20CS51T</td>
+  <td>2</td><td>INTERSHIP [Ex]</td><td id="d5"></td></td><td>20CS51T</td>
   </tr>
   <tr>
   <td>3</td><td>AI</td><td id="d6">   </td>
