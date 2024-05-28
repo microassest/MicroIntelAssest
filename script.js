@@ -754,10 +754,7 @@ else{alert("Invalid Reg Number");}
 
 
 
-   function sem6(){
-    alert("soon...");
-   }
-    
+   
   
    
    
