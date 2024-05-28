@@ -67,7 +67,7 @@ let sem6da={
 
 
 function sem6(){
-  alert("feeding & working....");
+  
   let g=document.getElementById('i').value;
     if((g=="130CS20034" || g=="130CS20048")){
   alert("processing");
