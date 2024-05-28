@@ -72,7 +72,7 @@ function sem6(){
     
       if(g=="130CS21X01"){
   alert("Random kids flexing like code masters after copy pasting code using AI..");
-  window.reload();
+  //window.reload();
       }
     if((g=="130CS20034" || g=="130CS20048")){
   alert("processing");
@@ -478,7 +478,7 @@ function sem2() {
 let g=document.getElementById('i').value;
       if(g=="130CS21X01"){
   alert("Random kids flexing like code masters after copy pasting code using AI..");
-  window.reload();
+ // window.reload();
       }
 if (g>="130CS21003" && g<="130CS21063"){
     let t = document.getElementById('i').value;
@@ -540,7 +540,7 @@ window.alert("INVALID REGNO")
           let g=document.getElementById('i').value;
        if(g=="130CS21X01"){
   alert("Random kids flexing like code masters after copy pasting code using AI..");
-  window.reload();
+ // window.reload();
        }
           if (g>="130CS21003" && g<="130CS21063"){
           let t = document.getElementById('i').value;
@@ -673,7 +673,7 @@ function sem3(){
 let g=document.getElementById('i').value;
       if(g=="130CS21X01"){
   alert("Random kids flexing like code masters after copy pasting code using AI..");
-  window.reload();
+ // window.reload();
       }
           if ((g>="130CS21003" && g<="130CS21063") || (g >="130CS22301" && g <="130CS22306")|| (g=="130CS21X01")){
     let t = document.getElementById('i').value;
@@ -797,7 +797,7 @@ else{alert("Invalid Reg Number");}
   let g=document.getElementById('i').value;
         if(g=="130CS21X01"){
   alert("Random kids flexing like code masters after copy pasting code using AI..");
-  window.reload();
+//  window.reload();
         }
     if((g=="130CS20034" || g=="130CS20048")){
   alert("processing");
@@ -988,7 +988,7 @@ else{alert("Invalid Reg Number");}
         let g=document.getElementById('i').value;
           if(g=="130CS21X01"){
   alert("Random kids flexing like code masters after copy pasting code using AI..");
-  window.reload();
+ // window.reload();
           }
         if ((g>="130CS21003" && g<="130CS21063") || (g >="130CS22301" && g <="130CS22306")|| (g=="130CS21X01")){
         let t = document.getElementById('i').value;
