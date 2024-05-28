@@ -1,6 +1,154 @@
 let tx;
 let xXxX;
 let a =new Audio();
+
+
+let sem6da={
+    s003:["130CS21003","AISHWARYA M",],
+    s005:["130CS21005","AMITH G S",],
+    s006:["130CS21006","AMRUTHA L",],
+    s007:["130CS21007","AMRUTHA M",],
+    s008:["130CS21008","AMULYA",],
+    s009:["130CS21009","ANUSHA S",],
+    s010:["130CS21010","ARCHANA R",],
+    s011:["130CS21011","CHAITHANYAKUMARI N",],
+    s012:["130CS21012","CHANDRASHEKHAR S",],
+    s014:["130CS21014","DARSHAN K P", ],
+    s015:["130CS21015","DHANUSH M", ],
+    s017:["130CS21017","DISHA N K",],
+    s018:["130CS21018","GOWTHAM S",],
+    s020:["130CS21020","JNANASHREE R",],
+    s021:["130CS21021","LAKSHMI S",],
+    s022:["130CS21022","MAHADEVAPRASAD",],
+    s023:["130CS21023","MAHADEVASWAMY N",],
+    s024:["130CS21024","MAHATHEJASWI H N",],
+    s025:["130CS21025","MAHENDRA U", ],
+    s029:["130CS21029","NAGARJUN P", ],
+    s030:["130CS21030","NANDAKUMARA M", ],
+    s032:["130CS21032","NIKHIL D", ],
+    s034:["130CS21034","NISARGA C",],
+    s035:["130CS21035","NISARGA K", ],
+    s037:["130CS21037","PRANAV P", ],
+    s038:["130CS21038","RAJEEVA", ],
+    s039:["130CS21039","RAJESHWARI S",],
+    s042:["130CS21042","ROHITH S", ],
+    s043:["130CS21043","S RAGHAVENDRA", ],
+    s045:["130CS21045","SAMUEL P", ],
+    s046:["130CS21046","SANDESHA N",],
+    s047:["130CS21047","SHIVANANDA SWAMY", ],
+    s049:["130CS21049","SHIVU K S", ],
+    s050:["130CS21050","SOWJANYA M",],
+    s051:["130CS21051","SPANDANA S", ],
+    s052:["130CS21052","SUCHITHRA K",],
+    s053:["130CS21053","SUPRIYA S JOSHI", ],
+    s054:["130CS21054","SUSHMITHA K", ],
+    s055:["130CS21055","SYED UMAR FAROOQ",],
+    s056:["130CS21056","SYEDA MALEEHA", ],
+    s057:["130CS21057","T R KEERTHANA",],
+    s058:["130CS21058","THARUN S",],
+    s059:["130CS21059","UDAY T",],
+    s060:["130CS21060","VARSHINI Y M",],
+    s061:["130CS21061","VARUN M",],
+    s062:["130CS21062","VIGNESH D", ],
+    s063:["130CS21063","VINAY G",],
+    sX01:["130CS21X01","SRIHARI C", ],
+    s301: ["130CS22301", "ABHICHAKRAVARTHI N S", ],
+    s302:[ "130CS22302", "DARSHANRAJE URS", ],
+    s303:[ "130CS22303", "PRADEEP S", ],
+    s304:[ "130CS22304", "SAGAR G P", ],
+    s305:[" 130CS22305", "SATHYARAJU S", ],
+    s306:[ "130CS22306", "SHIVAKUMAR", ]
+    
+     };
+
+
+function sem6(){
+  alert("feeding....");
+  let g=document.getElementById('i').value;
+    if((g=="130CS20034" || g=="130CS20048")){
+  alert("processing");
+    }
+    
+  if ((g>="130CS21003" && g<="130CS21063") || (g >="130CS22301" && g <="130CS22306")|| (g=="130CS21X01")){
+  let t = document.getElementById('i').value;
+  let k=t.substr(-3);
+  let h='s'+k;
+  if (h) {
+  let data = sem6da;
+  
+  var z1= `<div style="color: rgba(250, 162, 0, 0.966); font-size: medium;font-family:'Times New Roman', Times, serif">
+  <I><label for="d1"><strong> Regno:</strong></label> <n id="d1"></n><br>
+  <label for="d3"><strong> Sem:</strong></label> <n id="d3"></n><br>
+  <label for="d2"><strong> Student Name:</strong></label> <n id="d2"></n><br>
+  <label for="e"><strong> Institute:</strong></label> <n id="e"><strong>130-GOVERNAMENT PLOYTECNIC CHAMARAJANAGAR</strong></n></I>
+  <p>
+  
+  </p>
+  <p>
+  
+  
+  </p>
+  </div>
+  <div>
+  <Table border="1">
+  <th>Sl.No</th><th>Subject Name</th><th> Marks</th><th>Subject Code</th>
+  </tr>
+  <tr>
+  <td>2</td><td>INTERSHIP</td><td id="d5"></td></td><td>20CS51T</td>
+  </tr>
+  <tr>
+  <td>3</td><td>AI</td><td id="d6">   </td>
+  </tr>
+  </Table>
+  <P>
+  </P>
+  </div>
+  <div style="color:rgba(250, 162, 0, 0.966);">
+  <I><label for="d13"><strong>IA TOTAL:</strong></label><n> </n><n id="d13"></n><BR>
+  <label for="d14"><strong>EXAM TOTAL:</strong></label><n> </n><n id="d14"></n><BR>
+  <label for="d8"><strong>GRAND TOTAL:</strong></label><n> </n><n id="d8"></n><BR>
+  <P> </P>
+  
+  </div>`;
+  if (h in data){
+  document.getElementById("Table").innerHTML=z1;
+  }
+  else{
+  window.alert("INVALID REGNO")
+  }
+  document.getElementById('d1').innerHTML = data[h][0];
+  document.getElementById('d2').innerHTML = data[h][1];
+  document.getElementById('d3').innerHTML = 6;
+  //document.getElementById('d4').innerHTML = data[h][3];
+  document.getElementById('d5').innerHTML = data[h][2];
+  document.getElementById('d6').innerHTML = data[h][3];
+ document.getElementById('d13').innerHTML = data[h][3]+"/240";
+ document.getElementById('d14').innerHTML = data[h][2]+"/160";
+ document.getElementById('d8').innerHTML = data[h][2]+data[h][3]+"/400"+" ("+(data[h][2]+data[h][3])/400*100+" %)";
+ // document.getElementById('d15').innerHTML = data[h][8];
+  
+  
+  if (data[h][14]=="FAIL" || data[h][14]=="Fail" || data[h][14]=="withheld" || data[h][14]=="WITHHELD"){
+  let micro="intel";
+  }
+  if (data[h][14]=="FIRST CLASS" || data[h][14]=="First Class" || data[h][14]=="DISTINTION" || data[h][14]=="Distinction" || data[h][14]=="Pass"){
+  let micro="intell";
+  }
+  
+  }
+  
+  else {
+  alert("Invalid Input");
+  }
+  cht(h);
+  }
+  else{
+  if(g==''){alert("Enter Reg Nber");
+  }
+  else{alert("Invalid Reg Number");}
+  }
+  }
+
 let sem1da={
               s003:["130CS21003","AISHWARYA M",1,20,20,27,28,"-",95,40,25,37,46,42,190,285,"FIRST CLASS"],
               s004: ["130CS21004","AKASH S",1,00,06,21,20,"-",47,32,20,29,34,31,146,193,"FAIL"],
