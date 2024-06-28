@@ -430,7 +430,7 @@ var z1 = `<div style="color: rgba(250, 162, 0, 0.966); font-family:'Times New Ro
     </table><br>
 </div>
 <div style="color:rgba(250, 162, 0, 0.966);">
-    <b><p><u>IA Not Included</u></p></b>
+    <b><p><u>Kannada IA Not Included</u></p></b>
     <I><label for="d15"><strong>IA TOTAL:</strong></label><n> </n><n id="d15"></n><br>
     <label for="d9"><strong>EXAM TOTAL:</strong></label><n> </n><n id="d9"></n><br>
     <label for="d16"><strong>GRAND TOTAL:</strong></label><n> </n><n id="d16"></n><br>
@@ -604,7 +604,7 @@ var z1= `<div style="color: rgba(250, 162, 0, 0.966); font-size: medium;font-fam
 </P>
 </div>
 <div style="color:rgba(250, 162, 0, 0.966);">
-<b><p><u>IA  Included</u></p></b>
+<b><p><u>EVS IA  Included</u></p></b>
 <I><label for="d15"><strong>IA TOTAL:</strong></label><n> </><n id="d15"></n><BR>
 <label for="d9"><strong>EXAM TOTAL:</strong></label><n> </n><n id="d9"></n><BR>
 <label for="d16"><strong>GRAND TOTAL:</strong></label><n> </n><n id="d16"></n><BR>
@@ -716,7 +716,7 @@ var z1= `<div style="color: rgba(250, 162, 0, 0.966); font-size: medium;font-fam
 </P>
 </div>
 <div style="color:rgba(250, 162, 0, 0.966);">
-<b><p><u>IA Not Included</u></p></b>
+<b><p><u>Kannada IA Not Included</u></p></b>
 <I><label for="d13"><strong>IA TOTAL:</strong></label><n> </><n id="d13"></n><BR>
 <label for="d8"><strong>EXAM TOTAL:</strong></label><n> </n><n id="d8"></n><BR>
 <label for="d14"><strong>GRAND TOTAL:</strong></label><n> </n><n id="d14"></n><BR>
@@ -934,7 +934,7 @@ else{alert("Invalid Reg Number");}
     s035:["130CS21035","NISARGA K",4,	20 ,	16 	,18 ,	24 ,	"--" ,	78,	34 ,	47, 	52, 	34 ,	45 ,	212	,290,	"pass"],
 
     s037:["130CS21037","PRANAV P",4	,"NE",	16 ,	08 ,	23 ,	"--" 	,47	,20 ,	39 ,	37, 	25 ,	28,	149,	196	,"Fail"],
-    s038:["130CS21038","RAJEEVA",4	,36 ,	24 ,	,20 ,	24 	,"--" ,	104	,40 ,	50 	,58 ,	56 	,45 ,	249,	353	,"pass"],
+    s038:["130CS21038","RAJEEVA",4	,36 ,	24 , 20 ,	24 	,"--" ,	104	,40 ,	50 	,58 ,	56 	,45 ,	249,	353	,"pass"],
     s039:["130CS21039","RAJESHWARI S",4,"NE", "NE"	,06 ,	"NE", 	"--" ,	6	,14 ,	21 ,	31 ,	17 ,	20 ,	103,	109,	"Fail"],
 
     
@@ -1035,7 +1035,7 @@ else{alert("Invalid Reg Number");}
     </P>
     </div>
     <div style="color:rgba(250, 162, 0, 0.966);">
-    <b><p><u>IA Included</u></p></b>
+    <b><p><u> IC IA Included</u></p></b>
     <I><label for="d15"><strong>IA TOTAL:</strong></label><n> </><n id="d15"></n><BR>
     <label for="d9"><strong>EXAM TOTAL:</strong></label><n> </n><n id="d9"></n><BR>
     <label for="d16"><strong>GRAND TOTAL:</strong></label><n> </n><n id="d16"></n><BR>
