@@ -573,35 +573,46 @@ function dcet() {
         }
         
         if ((g>="130CS21003" && g<="130CS21063") || (g >="130CS22301" && g <="130CS22306")|| (g=="130CS21X01")){
-            
+        
+        
             let formS = `
                <center>
                <div id="dcetf">
                <form onsubmit="dcetmr(event)">
                <fieldset>
-               <legend><b><font> MicroResult </font></b> Data Feed Form</legend>
+               <legend><b><font> MicroResult </font></b> Feed Form</legend>
                <br>
-               <input id="duname" type="text" placeholder="NAME" required>
+               <input id="duname" type="text" placeholder="Name" required>
                <br><br>
-               <input id="dreg" type="text" placeholder="DIPLOMA REG NO" required>
+               <input id="dreg" type="text" placeholder="Diploma Reg no" required>
                <br><br>
-               <input id="dcetreg" type="text" placeholder="DCET REG NO" required>
+               <input id="dcetreg" type="text" placeholder="Dcet Reg no" required>
                <br><br>
-               <input id="drank" style="width:170px;padding:6px;" type="number" max="50000" min="0" placeholder="DCET RANK" required>
+               <input id="dipocm" max="100" min="0" type="number" style="padding:6px;width:180px;" placeholder="Diploma Final marks" required>
                <br><br>
-               <input id="dmark" style="width:170px;padding:6px;" type="number" max="100" min="0" placeholder="DCET SCORE" required>
+               <input id="drank" style="width:180px;padding:6px;" max="50000" min="0" type="number" placeholder="enter u r dcet rank" required>
                <br><br>
-               <input id="dipmark" style="width:170px;padding:6px;" type="number" max="100" min="0" placeholder="DIPLOMA FINAL MARKS" required>
-               <br><br>
+               <input id="dmark" max="100" min="0" type="number" style="padding:6px;width:180px;" placeholder="DCET SCORE marks" required>
+               <br><br><br>
                <button id="dsub" type="submit">Send Gmail</button>
                </fieldset>
                </form>
                </div>
                </center>
             `;
-            alert(document.getElementById('i').value);
-           // document.getElementById('dreg').innerHTML=document.getElementById('i').value;
+           // alert(document.getElementById('i').value);
+           
             document.getElementById("Table").innerHTML = formS;
+            document.getElementById('dreg').value=document.getElementById('i').value;
+            
+            let t = document.getElementById('i').value;
+            let k = t.substr(-3);
+            let h = 's' + k;
+            let data = sem5da;
+            let una=data[h][1];
+            
+            document.getElementById('duname').value=una;
+            
             }
             
             else{
@@ -610,7 +621,7 @@ function dcet() {
             }
         }
 
-        function dcetmr(event) {
+       function dcetmr(event) {
             event.preventDefault();
 
             let toM = "Microintel";
@@ -618,32 +629,37 @@ function dcet() {
             let uDRN = document.getElementById("dreg").value;
             let uDCETN = document.getElementById("dcetreg").value;
             let uDR = document.getElementById("drank").value;
-            let uM = document.getElementById("dmark").value;
-            let dipM=document.getElementById("dipmark").value;
-
+            let uM = parseInt(document.getElementById("dmark").value);
+            let dipcon=parseInt(document.getElementById("dipocm").value);
+            let totDD=dipcon/2+uM/2;
+            
+            
             let subject = "DCET Result Data Feed";
             let body = "Hi " + toM + ",\n\n" +
                 "I am " + uN + ",\n\n" +
                 "I hope this email finds you well.\n\n" +
-                "I would like to submit my results for inclusion in the micro results:\n\n" +
-                "Name: " + uN + "\n" +
-                "Diploma Reg No: " + uDRN + ",\n" +
-                "DCET Reg No: " + uDCETN + ",\n" +
-                "DCET Rank: " + uDR + ",\n" +
-                "DCET Marks: " + uM + "/100,\n" +
-                "DIPLOMA FINAL Marks: " + dipM + "/100,\n\n\n" +
+                "I would like to submit my results for inclusion in the micro-results: [ Access At Any Time ]\n\n" +
+                "Name : " + uN + "\n" +
+                "Diploma Reg No : " + uDRN + "\n" +
+                "DCET Reg No : " + uDCETN + "\n" +
+                "Diploma Final Marks : " + dipcon+ "/100,\n\n" +
+                "Rank : " + uDR + ",\n" +
+                "DCET Score : " + uM + "/100,\n\n" +
+                
                 "------------------------------\n\n"+
                 "This Is My JSON"+
-                "["+g+"','"+uN+"','"+uDCETN+"','"+uDR+"','"+uM+"','"+dipM+"']"+
+                "["+uDRN+"','"+uN+"','"+uDCETN+"','"+uDR+"','"+uM+"','"+dipcon+"']"+
                 "\n\n"+
-                 "----------------------------------"+
+                "----------------------------------"+
+                
+                
                 "Thank you...";
 
             let s = encodeURIComponent(subject);
             let b = encodeURIComponent(body);
 
             let mailData = "mailto:" + "microfly2410@gmail.com"+ "?subject=" + s + "&body=" + b;
-            alert("Mail Gateway Opened..");
+            alert("Mail Gateway has been Opened..");
             
             location.href = mailData;
         }
