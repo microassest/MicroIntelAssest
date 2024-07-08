@@ -552,7 +552,43 @@ function dmcc(){
     location.href="https://microintel.github.io/Result/dipmarkcard/dipcardgen.html";
 }
 
+
+
 /*______________________________________________/*______________________________________________/*______________________________________________/*______________________________________________/*______________________________________________*/
+
+function seld(){
+
+let g=document.getElementById('i').value;
+if(g==""){
+alert("please enter the reg number!");
+location.reload();
+}
+    
+      if(g=="130CS21X01"){
+  alert("Random kids flexing like code masters after copy pasting code using AI..");
+  //window.reload();
+      }
+    if((g=="130CS20034" || g=="130CS20048")){
+  alert("processing");
+    }
+    
+  if ((g>="130CS21003" && g<="130CS21063") || (g >="130CS22301" && g <="130CS22306")|| (g=="130CS21X01")){
+  let t = document.getElementById('i').value;
+  let k=t.substr(-3);
+  let h='s'+k;
+  if (h in dcetDATA) {
+  alert("Dear "+dcetDATA[h][1]+",\n Your DIPLOMA Marks Card Is Ready To View.");
+  document.getElementById('dcr').style.display="block";
+  document.getElementById('ddf').style.display="block";
+  document.getElementById('dmk').style.display="block";
+  
+}
+else{
+document.getElementById('dcr').style.display="none";document.getElementById('ddf').style.display="none";document.getElementById('dmk').style.display="none";
+}
+}
+}
+
 
 function dcet() {
         let g=document.getElementById('i').value;
