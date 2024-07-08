@@ -577,7 +577,7 @@ location.reload();
   let k=t.substr(-3);
   let h='s'+k;
   if (h in dcetDATA) {
-  alert("Dear "+dcetDATA[h][1]+",\n Your DIPLOMA Marks Card Is Ready To View.");
+  //alert("Dear "+dcetDATA[h][1]+",\n Your DIPLOMA Marks Card Is Ready To View.");
   document.getElementById('dcr').style.display="block";
   document.getElementById('ddf').style.display="block";
   document.getElementById('dmk').style.display="block";
