@@ -210,13 +210,14 @@ function sem6(){
   else {
   alert("Invalid Input");
   }
-  cht(h);
+  
   }
   else{
   if(g==''){alert("Enter Reg Nber");
   }
   else{alert("Invalid Reg Number");}
   }
+  lau();
   }
 
 
@@ -256,7 +257,8 @@ let sem1da={
               s034:["130CS21034","NISARGA C",1,20,12,32,32,'-',96,40,32,34,42,35,183,279,"FAIL"],
               s035:["130CS21035","NISARGA K",1,00,03,27,16,'-',46,38,25,36,43,36,178,224,"FAIL"],
               s036:["130CS21036","NITHIN KUMAR R",1,06,20,22,20,'-',68,29,22,40,38,28,157,225,"FAIL"],
-              s037:["130CS21037","PRANAV P",1,00,04,17,16,'-',37,25,21,25,25,27,123,160,"FAIL"],
+              s037:["130CS21037","PRANAV P",1,46,26,36,34,'-',142,44,39,52,58,46,239,381,"PASS [ NKN CHAKLI ]"],
+             // s037:["130CS21037","PRANAV P",1,00,04,17,16,'-',37,25,21,25,25,27,123,160,"FAIL"],
               s038:["130CS21038","RAJEEVA",1,23,25,28,36,'-',112,40,34,48,49,46,217,329,"FIRST CLASS"],
               s039:["130CS21039","RAJESHWARI S",1,"AB","AB","AB",0,'-',0,32,23,24,39,26,144,144,"FAIL"],
               s040:["130CS21040","RAKSHITHA",1,"*","","",'-',"",0,"","","",'-',"*",0,0,"withheld"],
@@ -544,6 +546,9 @@ function sem() {
                 break;
             
            }
+           
+           
+           
     }
     
     
@@ -747,12 +752,13 @@ window.alert("INVALID REGNO")
     } else {
         alert("Invalid Input");
     }
-    cht(h);
+    
     }
     else{
     if (g==''){alert("Enter Reg Number");}
     else{alert("Invalid Reg Number");}
 }
+lau();
 }
 
 
@@ -878,13 +884,13 @@ a.play();
 alert("Invalid input");
   }
 tx=h;
-  cht(h);
 }
 else{
 if (g==''){alert("Enter Reg Number");}
 else{
 alert("Invalid Reg Number");}
 }
+lau();
 }
 
 
@@ -992,13 +998,14 @@ a.src="wis.mp3";a.currentTime=0;a.play();
  else {
         alert("Invalid Input");
 }
-cht(h);
+
 }
 else{
 if(g==''){alert("Enter Reg Nber");
 }
 else{alert("Invalid Reg Number");}
 }
+lau();
 }
 
 
@@ -1108,13 +1115,14 @@ else{alert("Invalid Reg Number");}
   else {
   alert("Invalid Input");
   }
-  cht(h);
+  
   }
   else{
   if(g==''){alert("Enter Reg Nber");
   }
   else{alert("Invalid Reg Number");}
   }
+  lau();
   }
 
 
@@ -1311,13 +1319,14 @@ else{alert("Invalid Reg Number");}
     alert("Invalid input");
     }
     tx=h;
-    cht(h);
+    
     }
     else{
     if (g==''){alert("Enter Reg Number");}
     else{
     alert("Invalid Reg Number");}
     }
+    lau();
     }
     
     
@@ -1589,7 +1598,7 @@ else{alert("Invalid Reg Number");}
     alert("Invalid input");
     }
     tx=h;
-    cht(h);
+    
     }
     else{
     if (g==''){alert("Enter Reg Number");}
@@ -1684,7 +1693,7 @@ else{alert("Invalid Reg Number");}
     alert("Invalid input");
     }
     tx=h;
-    cht(h);
+    
     }
     else{
     if (g==''){alert("Enter Reg Number");}
